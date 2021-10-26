@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+        <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+            <head>
+                <style>
+                    .first-style {
+                        background-color: lightcoral;
+                    }
+        
+                    .second-style {
+                        border: 2px dotted darkcyan
+                    }
+        
+                    .third-style {
+                        margin-left: 100px
+                    }
+        
+                    .fourth-style {
+                        color: hotpink
+                    }
+        
+                    .fifth-style {
+                        font-weight: bolder;
+                    }
+        
+                </style>
+            </head>
+            <body>
+                <div id="first">Første</div>
+                <input id="check1" type="checkbox" onchange="toggleStyle1()" />
+
+                <div id="second">Andre</div>
+                <input id="check2" type="checkbox" onchange="toggleStyle2()" />
+             
+                <div id="third">Tredje</div>
+                <input id="check3" type="checkbox" onchange="toggleStyle3()" />
+
+                <div id="fourth">Fjerde</div>
+                <input id="check4" type="checkbox" onchange="toggleStyle4()" />
+
+                <div id="fifth">Femte</div>
+                <input id="check5" type="checkbox" onchange="toggleStyle5()" />
+              
+        
+                <script>
+                    
+                    {
+                    function toggleStyle1() {
+                    var isChecked = document.getElementById('check1').checked;
+                    document.getElementById('first').classList.toggle('first-style', isChecked);
+                    }
+    
+                    function toggleStyle2() {
+                     var isChecked = document.getElementById('check2').checked;
+                    document.getElementById('second').classList.toggle('second-style', isChecked);
+                    }
+
+                    function toggleStyle3() {
+                    var isChecked = document.getElementById('check3').checked;
+                    document.getElementById('third').classList.toggle('third-style', isChecked);
+                    }
+
+                    function toggleStyle4() {
+                    var isChecked = document.getElementById('check4').checked;
+                    document.getElementById('fourth').classList.toggle('fourth-style', isChecked);
+                    }
+
+                    function toggleStyle5() {
+                        var isChecked = document.getElementById('check5').checked;
+                        document.getElementById('fifth').classList.toggle('fifth-style', isChecked);
+                    }
+                    }
+
+            
+        
+
+            </script>
+
+            </body>
